@@ -1,0 +1,104 @@
+<head>
+        <meta charset="utf-8">
+        <title><?=$titulo?></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="<?=base_url()?>img/favicon.ico">
+        
+        <?//Archivos generales ?>    
+        <link rel="stylesheet" href="<?=base_url('css/bootstrap.css')?>" media="screen">
+        <link rel="stylesheet" href="<?=base_url('css/login/stylesheets.css')?>">
+		<link rel="stylesheet" href="<?=base_url('css/general.css')?>">
+
+        <script src="<?=base_url('js/jquery.js')?>"></script>
+        <script src="<?=base_url('js/bootstrap.min.js')?>"></script>
+       
+
+        <!-- JS para crear las mascaras en los input text-->
+        <script type="text/javascript" src="<?=base_url('plugins/form-inputmask/jquery.inputmask.bundle.min.js');?>"></script>    <!-- Input Masks Plugin -->
+        <script type="text/javascript" src="<?=base_url('demo/demo-mask.js');?>"></script>
+
+
+<style type="text/css">
+body {
+    padding-top: 0px;
+    background-color:#f1f1f1;
+
+   
+}
+
+#estilo_cuerpo_formulario{
+	background-color: white;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+	padding-top:0%;
+}
+.estilo_recuperarcontra{
+	font-size:28px;
+	color:#2e5268;	
+	text-align:center;
+	padding-bottom: 7px;
+}
+.estilo_cuil{
+	font-weight: lighter;
+	text-align: center;
+}
+#estilo_asterisco {
+    color: 	#8aa0ae;
+    font-size: 12px !important;
+    text-align: center;
+}
+}
+#estilo_page-heading{
+    margin-top: 0px;
+    background-color:#244c66;
+    padding-bottom:1%;
+    padding-top:1%;
+    padding-left:1%;
+
+}
+.barra{
+    width: 100%;
+    height: 50px;
+    background-color: #141a4d;
+}
+</style>
+</head>
+
+<div class="vista-previa">
+    <div class="barra">
+        <img src="<?=base_url('img/logo_fondo_oscuro.png');?>"/ style="padding: 8px">
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+
+            <div class="col-md-12" id="estilo_cuerpo_formulario">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="estilo_recuperarcontra">E-mail correctamente enviado
+                        </h3>
+                        <hr style="margin-bottom: 0px !important;margin-top: 3px;"
+                        ">
+                        <img src="<?=base_url('img/confirmar_mail.png');?>" style="width: 26%;     padding-top: 30px;
+margin left: 30%;margin-left: 40%; padding-bottom: 20px;"/>
+
+
+                        <h5 class="estilo_cuil"> Revisa tu Casilla de Correo Electrónico, para finalizar la recuperación
+                            de tu cuenta. </h5>
+                        <h5 id="estilo_asterisco">
+                            (Este Correo, puede ser también recibido en la <b> Sección de Spam </b> o <b>Correo No
+                            Deseado</b>)</h5>
+                        <hr>
+                        <a href="<?=base_url()?>" class="btn btn-default btn-acordar"
+                           style="  width: 100%;  background-color:#5696e2; color:white;">Continuar</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-3"></div>
+</div>
